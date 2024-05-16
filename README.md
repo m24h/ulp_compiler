@@ -30,7 +30,7 @@ There can only one ASM code per line (labels like 'l123:' can be included).
 
 NOTICE, it's important. there's a big direffence from other standard asemble compiler, that labels, address and offsets are all expressed as 32-bit words, not bytes. This is also the internal address expression of ULP, and here I didn't do complex translations to adapt to the way of bytes address.
 
-### Example
+### Example (not tested, just for understanding)
 
 ASM code:
 
@@ -45,7 +45,7 @@ entry:
     move r3, data
     ld r0, r3, 1 # address/offset must be expressed as 32-bit words, not bytes
     add r0, r0, to_add
-    jumpr add1-pc, 100, gt # support 'pc' for relative jump
+    jumpr add1-pc, 100, lt # support 'pc' for relative jump
     move r0, 0
 add1:
     st r0, r3, 1
