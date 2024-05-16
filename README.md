@@ -28,7 +28,7 @@ There can only one ASM code per line (labels like 'l123:' can be included).
 
 .data and .bss sections are not supported now. And in fact they are not useful for micropython. IDF users can also access data directly by using the memory address.
 
-NOTICE, it's important. there's a big direffent from other standard asemble compiler, labels, address and offsets are all expressed as 32-bit words, not bytes. This is also the internal address expression of ULP, and here I didn't do complex translations to adapt to the way of bytes address.
+NOTICE, it's important. there's a big direffence from other standard asemble compiler, that labels, address and offsets are all expressed as 32-bit words, not bytes. This is also the internal address expression of ULP, and here I didn't do complex translations to adapt to the way of bytes address.
 
 ### Example
 
